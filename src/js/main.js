@@ -6,6 +6,7 @@ document.getElementById("surveyButton").addEventListener("click", response);
 
 function response() {
     alert("Vielen Dank für deine Teilnahme!");
+
     
 }
 
