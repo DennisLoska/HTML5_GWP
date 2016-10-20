@@ -31,60 +31,68 @@
         <section>
             <h2>Jede Stimme ist uns wichtig - dauert nur 2 Minuten!</h2>
             <p>Wir freuen uns über jede Art von Feedback die wir bekommen, deshalb laden wir euch ein eure Wünsche für zukünftige Beiträge und allgemeine Verbesserungsvorschläge über diese Umfrage mitzuteilen.</p>
-            <img src="img/racing-bicycle-161449_1280.png" width="400"  alt="Rennrad">
+            <img src="img/racing-bicycle-161449_1280.png" width="400" alt="Rennrad">
         </section>
-        <br>
-        <hr>
-        <br>
 
         <form action="js/main.js" id="surveyFeedback">
             <fieldset>
-                <legend>Umfrage</legend>
+                <legend>Ihre Meinung</legend>
                 <div>
-                    <label for="feedback">Wie findest du unseren Blog?</label>
-                    <br>
-                    <br>
-                    <textarea id="feedback" name="survey" cols="45" rows="10" maxlength="450" placeholder="Deine Meinung..."></textarea>
+                    <label for="feedback"> </label>
+                    <textarea id="feedback" name="survey" cols="45" rows="10" maxlength="450" placeholder="Ihre Meinung..."></textarea>
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ihre Bewertung</legend>
                 <div>
-                    <p>Auf einer Skala von 1 bis 10 gibst du uns eine:</p>
-                    <p>
-                        <label for="grade1">1</label>
-                        <input type="radio" name="grade" value="1" id="grade1">
-                        <label for="grade2">2</label>
-                        <input type="radio" name="grade" value="2" id="grade2">
-                        <label for="grade3">3</label>
-                        <input type="radio" name="grade" value="3" id="grade3">
-                        <label for="grade4">4</label>
-                        <input type="radio" name="grade" value="4" id="grade4">
-                        <label for="grade5">5</label>
-                        <input type="radio" name="grade" value="5" id="grade5" checked="checked">
-                        <label for="grade6">6</label>
-                        <input type="radio" name="grade" value="6" id="grade6">
-                        <label for="grade7">7</label>
-                        <input type="radio" name="grade" value="7" id="grade7">
-                        <label for="grade8">8</label>
-                        <input type="radio" name="grade" value="8" id="grade8">
-                        <label for="grade9">9</label>
-                        <input type="radio" name="grade" value="9" id="grade9">
-                        <label for="grade10">10</label>
-                        <input type="radio" name="grade" value="10" id="grade10">
-                    </p>
+                    <label for="grade1">1</label>
+                    <input type="radio" name="grade" value="1" id="grade1">
+                    <label for="grade2">2</label>
+                    <input type="radio" name="grade" value="2" id="grade2">
+                    <label for="grade3">3</label>
+                    <input type="radio" name="grade" value="3" id="grade3">
+                    <label for="grade4">4</label>
+                    <input type="radio" name="grade" value="4" id="grade4">
+                    <label for="grade5">5</label>
+                    <input type="radio" name="grade" value="5" id="grade5" checked="checked">
+                    <label for="grade6">6</label>
+                    <input type="radio" name="grade" value="6" id="grade6">
+                    <label for="grade7">7</label>
+                    <input type="radio" name="grade" value="7" id="grade7">
+                    <label for="grade8">8</label>
+                    <input type="radio" name="grade" value="8" id="grade8">
+                    <label for="grade9">9</label>
+                    <input type="radio" name="grade" value="9" id="grade9">
+                    <label for="grade10">10</label>
+                    <input type="radio" name="grade" value="10" id="grade10">
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ihr Name:</legend>
+                <div>
+                    <label for="firstName">Vorname:</label>
+                    <input type="text" id="firstName" placeholder="Max">
+                    <label for="lastName">Nachname:</label>
+                    <input type="text" id="lastName" placeholder="Mustermann">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ihr Alter:</legend>
                 <div>
                     <label for="age">Alter:</label>
                     <input type="number" name="age" id="age">
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Geschlecht:</legend>
                 <div>
-                    <p>Geschlecht:</p>
                     <label for="female">weiblich</label>
                     <input type="radio" id="female" name="gender" value="f">
                     <label for="male">männlich</label>
                     <input type="radio" id="male" name="gender" value="m">
-                    <hr>
                 </div>
-                <button id="surveyButton" form="surveyFeedback">senden</button>
             </fieldset>
+            <button id="surveyButton" form="surveyFeedback">senden</button>
         </form>
         <footer>
             <section>
