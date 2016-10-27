@@ -32,6 +32,10 @@ die Seite responsiv zu gestalten. */
 body * {
     float: left;
 }
+
+h1,h2,h3 {
+    padding-left: 1%;
+}
 body {
 
 }
@@ -39,9 +43,11 @@ header {
     width: 100%;
     height: 65px;
     background-color: lightblue;
+    position: fixed;
 }
 main {
     margin: 5% 0% 5% 0%;
+    padding: 4%;
 }
 nav ul {
     width: 100%;
@@ -76,23 +82,10 @@ nav {
     width: 80%;
     background-color: lightblue;
 }
-p {
-    padding: 2.5%
+p,figure {
+    padding: 1.5%
 }
-article {
+article,section {
     margin: 2.5% 0% 2.5% 0%;
 }
-
 /* tempäre Farbgebung zum leichten Workflow */
-main {
-    background-color: blueviolet;
-}
-article {
-    background-color: darkgreen;
-}
-section {
-    background-color: darkorange;
-}
-footer {
-    background-color: deeppink;
-}
