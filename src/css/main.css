@@ -16,6 +16,15 @@ p {
 h1 {
     font-size: 1.5rem;
 }
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
 small {
     font-size: 0.8rem
 }
@@ -27,32 +36,88 @@ body * {
     float: left;
 }
 
-header{
-    width: 100%;
-    height: auto;
-}
-header figure {
-    float: right;
+body{
+     padding-left: 2.5%;
+     padding-right: 2.5%;
 }
 
+header {
+    width: 100%;
+    height: 65px;
+
+}
+
+nav li {
+   padding-left: 10%;
+display: inline;
+}
+
+header figure {
+    width: 20%;
+    float: right;
+    height: 100%;
+}
+header figure img {
+    height: 100%;
+    margin: 0% 20% 0% 0%;
+}
 nav iframe {
     width: 100%;
+    height:
 }
-
-
 
 header figcaption {
     display: none;
 }
-
 .hidden {
     display: none;
 }
+nav {
+    background-color: aqua;
+    width: 80%;
+}
+
+p {
+    padding: 2.5%
+}
+
+article {
+    margin: 2.5% 0% 2.5% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* tempäre Farbgebung zum leichten Workflow */
 
-nav {
-    background-color: aqua;
+
+figure {
+    background-color: bisque;
 }
 header {
     background-color: blue;
