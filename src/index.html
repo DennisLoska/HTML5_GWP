@@ -10,9 +10,11 @@
 
 <body>
     <header>
-       <h1>Das wird unsichtbar gemacht.</h1>
+        <div class="hidden">
+            <h1>Das wird unsichtbar gemacht.</h1>
+        </div>
         <nav>
-            <iframe height="200" src="navigation.html">
+            <iframe src="navigation.html">
                 <!--Fallback für nicht interpretierte i-Frames -->
                 <ul>
                     <li><a href="index.html">Beiträge</a></li>
@@ -23,7 +25,7 @@
             </iframe>
         </nav>
         <figure>
-            <img src="img/bloglogo.png" width="80" alt="Bloglogo">
+            <img src="img/bloglogo.png" alt="Bloglogo">
             <figcaption>Quelle: <a href="https://logomakr.com/0XWVXE">logomakr.com</a></figcaption>
         </figure>
     </header>

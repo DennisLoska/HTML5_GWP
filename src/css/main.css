@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Zunächst werden die Schriftarten und Verhältnisse zwischen den
+einzelnen Schriftgrößen definiert. */
+
+html {
+    font-size: 18px;
+    font-family: fantasy;
+    background-color: #efefef;
+}
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.5rem;
+}
+small {
+    font-size: 0.8rem
+}
+
+/* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
+die Seite responsiv zu gestalten. */
+
+body * {
+    float: left;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+header figure {
+    float: right;
+}
+
+nav iframe {
+    width: 100%;
+}
+
+
+
+header figcaption {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* tempäre Farbgebung zum leichten Workflow */
+
+nav {
+    background-color: aqua;
+}
+header {
+    background-color: blue;
+}
+main {
+    background-color: blueviolet;
+}
+article {
+    background-color: darkgreen;
+}
+section {
+    background-color: darkorange;
+}
+footer {
+    background-color: deeppink;
+}
