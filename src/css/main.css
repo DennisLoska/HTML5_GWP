@@ -82,16 +82,16 @@ die Seite responsiv zu gestalten. */
 		overflow-y: hidden;
 	}
 
-	@media screen and (min-width:481px && max-width:680px) {
+	@media screen and (max-width:1023px) {
 		nav iframe {
-			min-height: 315px;
+			min-height: 316px;
 		}
 		nav {
-			min-height: 315px;
+			min-height: 316px;
 		}
 	}
 
-	@media screen and (min-width:481px && max-width:1023px) {
+	@media screen and (max-width:1023px) {
 		ul.navList {
 			position: relative;
 		}
