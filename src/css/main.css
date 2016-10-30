@@ -166,4 +166,8 @@ die Seite responsiv zu gestalten. */
 	section {
 		margin: 2% 0% 2.5% 0%;
 	}
+
+	textarea {
+		width: 100%;
+	}
 	/* tempäre Farbgebung zum leichten Workflow */
