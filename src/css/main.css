@@ -118,6 +118,10 @@ die Seite responsiv zu gestalten. */
 		nav {
 			min-height: 316px;
 		}
+		#mainImg {
+			padding-top: 60%;
+			font-size: 5px;
+		}
 	}
 
 	@media screen and (max-width:1023px) {
