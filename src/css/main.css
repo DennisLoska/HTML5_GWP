@@ -12,6 +12,7 @@ einzelnen Schriftgrößen definiert. */
 
 	p {
 		font-size: 1rem;
+		line-height: 1.3;
 	}
 
 	h1 {
@@ -34,15 +35,41 @@ die Seite responsiv zu gestalten. */
 
 	body * {}
 
+	h1,
 	h2,
 	h3 {
 		padding-bottom: 5%;
+	}
+
+	p {
+		padding-bottom: 4%;
 	}
 
 	body {}
 
 	header {
 		width: 100%;
+	}
+
+	#mainImg {
+		background-image: url("../img/cycling-655565_1280.jpg");
+		min-height: 1020px;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#headline {
+		text-align: center;
+		padding-top: 25%;
+		font-size: 8.5em;
+		color: #DBDBDB;
+		text-shadow: 0 -2px 1px #FFFFFF, 0 2.5px 1px #666666;
+	}
+
+	footer {
+		padding: 0% 0% 10% 0%;
 	}
 
 	nav {
@@ -74,6 +101,7 @@ die Seite responsiv zu gestalten. */
 	}
 
 	nav iframe {
+		position: fixed;
 		background-color: lightskyblue;
 		border: none;
 		max-height: 80px;
@@ -84,6 +112,7 @@ die Seite responsiv zu gestalten. */
 
 	@media screen and (max-width:1023px) {
 		nav iframe {
+			position: relative;
 			min-height: 316px;
 		}
 		nav {
@@ -143,6 +172,10 @@ die Seite responsiv zu gestalten. */
 		position: absolute;
 	}
 
+	figcaption {
+		padding-top: 1%
+	}
+
 	li figcaption {
 		display: none;
 	}
@@ -151,20 +184,18 @@ die Seite responsiv zu gestalten. */
 		display: none;
 	}
 
-	p,
 	header>figure {
 		padding: 1.5% 0% 1.5% 0%;
+	}
+
+	figure {
+		padding: 2.5% 0% 5.5% 0%;
 	}
 
 	main {
 		float: left;
 		margin: 5% 10% 5% 10%;
 		padding: 4%;
-	}
-
-	article,
-	section {
-		margin: 2% 0% 2.5% 0%;
 	}
 
 	textarea {
