@@ -1,91 +1,167 @@
-* {
-    box-sizing: border-box;
-}
-
-/* Zunächst werden die Schriftarten und Verhältnisse zwischen den
+	* {
+		box-sizing: border-box;
+	}
+	/* Zunächst werden die Schriftarten und Verhältnisse zwischen den
 einzelnen Schriftgrößen definiert. */
 
-html {
-    font-size: 18px;
-    font-family: fantasy;
-    background-color: #efefef;
-}
-p {
-    font-size: 1rem;
-}
-h1 {
-    font-size: 1.5rem;
-}
-h2 {
-    font-size: 1.3rem;
-}
-h3 {
-    font-size: 1.1rem;
-}
-small {
-    font-size: 0.8rem
-}
+	html {
+		font-size: 18px;
+		font-family: fantasy;
+		background-color: #efefef;
+	}
 
-/* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
+	p {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+
+	small {
+		font-size: 0.8rem
+	}
+	/* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
 die Seite responsiv zu gestalten. */
 
-body * {
-    float: left;
-}
+	body * {}
 
-h1,h2,h3 {
-    padding-left: 1%;
-}
-body {
+	h2,
+	h3 {
+		padding-bottom: 5%;
+	}
 
-}
-header {
-    width: 100%;
-    height: 65px;
-    background-color: lightblue;
-    position: fixed;
-}
-main {
-    margin: 5% 0% 5% 0%;
-    padding: 4%;
-}
-nav ul {
-    width: 100%;
-    height: 65px;
-    padding: 0% 3% 0% 3%;
-}
-nav ul li {
-    padding: 2%;
-}
-header figure {
-    width: 20%;
-    float: right;
-    height: 100%;
-}
-header figure img {
-    height: 100%;
-    margin: 0% 10% 0% 0%;
-    float: right;
-}
-nav iframe {
-    width: 100%;
-    height: 65px;
-    border: none;
-}
-header figcaption {
-    display: none;
-}
-header>h1 {
-    display: none;
-}
-nav {
-    width: 80%;
-    background-color: lightblue;
-}
-p,figure {
-    padding: 1.5%
-}
-article,section {
-    margin: 2.5% 0% 2.5% 0%;
-}
-/* tempäre Farbgebung zum leichten Workflow */
+	body {}
+
+	header {
+		width: 100%;
+	}
+
+	nav {
+		width: inherit;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: lightskyblue;
+	}
+
+	ul li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 32px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: #111;
+	}
+
+	nav iframe {
+		background-color: lightskyblue;
+		border: none;
+		max-height: 80px;
+		min-height: 80px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	@media screen and (max-width:600px) {
+		nav iframe {
+			min-height: 315px;
+		}
+	}
+
+	@media screen and (max-width:600px) {
+		ul.navList {
+			position: relative;
+		}
+		ul.navList li.icon {
+			display: none;
+		}
+		ul.navList li {
+			float: none;
+			display: inline;
+		}
+		ul.navList li a {
+			display: block;
+			text-align: left;
+		}
+	}
+
+	.navUL {
+		background-color: lightskyblue;
+	}
+
+	section iframe {
+		height: 100%;
+	}
+
+	.frame {
+		position: relative;
+		padding-bottom: 56.25%;
+		/* 56.25% */
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.navframe iframe {
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.frame iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.frameSection {
+		width: 50%;
+		position: absolute;
+	}
+
+	li figcaption {
+		display: none;
+	}
+
+	header>h1 {
+		display: none;
+	}
+
+	p,
+	header>figure {
+		padding: 1.5% 0% 1.5% 0%;
+	}
+
+	main {
+		float: left;
+		margin: 5% 15% 5% 15%;
+		padding: 4%;
+		max-width: 80%;
+	}
+
+	article,
+	section {
+		margin: 2% 0% 2.5% 0%;
+	}
+	/* tempäre Farbgebung zum leichten Workflow */
