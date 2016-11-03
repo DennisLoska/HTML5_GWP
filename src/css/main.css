@@ -76,12 +76,14 @@ die Seite responsiv zu gestalten. */
 		width: inherit;
 	}
 
+    nav div {
+    background-color: lightblue;
+    }
 	nav ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: lightskyblue;
 	}
 
 	ul li {
@@ -102,7 +104,6 @@ die Seite responsiv zu gestalten. */
 
 	nav iframe {
 		position: fixed;
-		background-color: lightskyblue;
 		border: none;
 		max-height: 80px;
 		min-height: 80px;
