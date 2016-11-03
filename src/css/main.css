@@ -154,7 +154,6 @@ die Seite responsiv zu gestalten. */
 		position: relative;
 		padding-bottom: 56.25%;
 		/* 56.25% */
-		height: 0;
 		overflow: hidden;
 		width: 100%;
 	}
@@ -206,4 +205,12 @@ die Seite responsiv zu gestalten. */
 	textarea {
 		width: 100%;
 	}
+
+a {
+    color: blue;
+}
+
+a:active {
+    color: violet;
+}
 	/* tempäre Farbgebung zum leichten Workflow */
