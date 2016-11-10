@@ -187,6 +187,8 @@ die Seite responsiv zu gestalten. */
 	    float: left;
 	    margin: 5% 10% 5% 10%;
 	    padding: 4%;
+        background-color: white;
+
 	}
 	textarea {
 	    width: 100%;
