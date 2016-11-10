@@ -57,16 +57,15 @@ die Seite responsiv zu gestalten. */
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-        margin-top: 10%;
+        margin-top: 50%;
 	}
 	#mainImg {
 	    background-image: url("../img/cycling-655565_1280.jpg");
-	    min-height: 1080px;
+	    min-height: 1440px;
 	    background-attachment: fixed;
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-        margin-bottom: 10;
 	}
 	#headline {
 	    text-align: center;
