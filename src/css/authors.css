@@ -1,0 +1,23 @@
+* {
+		box-sizing: border-box;
+	}
+html {
+		background: url(Background/footer_lodyas.png);
+	}
+h1{
+    font-size: 25px;
+    color: seashell;
+    font: cursive;
+}
+p{
+    font-size: 20px;
+    color: azure;
+}
+figcaption{
+    font-size: 20px;
+}
+h2{
+    font-size: 25px;
+    color: darkred;
+    font: cursive;
+}
