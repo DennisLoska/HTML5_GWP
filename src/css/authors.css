@@ -3,10 +3,11 @@
 	}
 html {
 		background: url(Background/footer_lodyas.png);
+        background-color: #01A9DB;
 	}
 h1{
     font-size: 25px;
-    color: seashell;
+    color: black;
     font: cursive;
 }
 p{
