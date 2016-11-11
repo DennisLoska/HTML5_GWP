@@ -2,30 +2,34 @@
 einzelnen Schriftgrößen definiert. */
 
 html {
-	font-size: 20px;
-	font-family: fantasy;
 	background-color: #efefef;
+	font-family: fantasy;
+	font-size: 20px;
 }
 
 p {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	line-height: 1.3;
 }
 
 h1 {
 	font-size: 1.7rem;
+	padding-bottom: 3%;
 }
 
 h2 {
 	font-size: 1.5rem;
+	padding-bottom: 3%;
 }
 
 h3 {
 	font-size: 1.3rem;
+	padding-bottom: 3%;
 }
 
 h4 {
 	font-size: 1.1rem;
+	padding-bottom: 3%;
 }
 
 h5 {
@@ -39,14 +43,6 @@ small {
 
 /* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
 die Seite responsiv zu gestalten. */
-
-h1,
-h2,
-h3,
-h4,
-h6 {
-	padding-bottom: 3%;
-}
 
 main>h2 {
 	background-color: whitesmoke;
@@ -63,42 +59,42 @@ header {
 }
 
 .backImg {
-	background-image: url("../img/sunset-landscape-1149640_1920.jpg");
-	min-height: 15000px;
 	background-attachment: fixed;
+	background-image: url("../img/sunset-landscape-1149640_1920.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 15000px;
 	padding-top: 35%;
 }
 
 #mainImg {
-	background-image: url("../img/cycling-655565_1280.jpg");
-	min-height: 1440px;
 	background-attachment: fixed;
+	background-image: url("../img/cycling-655565_1280.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 1440px;
 }
 
 #headline {
-	text-align: center;
-	font-size: 8.5em;
-	padding: 23% 0% 0% 0%;
 	color: #DBDBDB;
+	font-size: 8.5em;
+	padding-top: 23%;
+	text-align: center;
 	text-shadow: 0 -2px 1px #FFFFFF, 0 2.5px 1px #666666;
 }
 
 #underline {
-	text-align: center;
+	font-size: 8.5em;
 	font-style: normal;
 	line-height: 0.8;
-	font-size: 8.5em;
 	padding: 24% 0% 24% 0%;
+	text-align: center;
 }
 
 footer {
-	padding: 0% 0% 10% 0%;
+	padding-bottom: 10%;
 }
 
 nav {
@@ -112,8 +108,8 @@ nav div {
 nav ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	overflow: hidden;
+	padding: 0;
 }
 
 ul li {
@@ -121,10 +117,10 @@ ul li {
 }
 
 li a {
-	display: block;
 	color: white;
-	text-align: center;
+	display: block;
 	padding: 32px 16px;
+	text-align: center;
 	text-decoration: none;
 }
 
@@ -133,26 +129,26 @@ li a:hover {
 }
 
 nav iframe {
-	position: fixed;
 	border: none;
 	max-height: 80px;
 	min-height: 80px;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	position: fixed;
 	z-index: 1;
 }
 
 @media screen and (max-width:1023px) {
 	nav iframe {
-		position: relative;
 		min-height: 316px;
+		position: relative;
 	}
 	nav {
 		min-height: 316px;
 	}
 	#mainImg {
-		padding-top: 60%;
 		font-size: 5px;
+		padding-top: 60%;
 	}
 }
 
@@ -164,8 +160,8 @@ nav iframe {
 		display: none;
 	}
 	ul.navList li {
-		float: none;
 		display: inline;
+		float: none;
 	}
 	ul.navList li a {
 		display: block;
@@ -182,29 +178,25 @@ section iframe {
 }
 
 .frame {
-	position: relative;
+	overflow: hidden;
 	padding-bottom: 56.25%;
 	/* 56.25% */
-	overflow: hidden;
+	position: relative;
 	width: 100%;
 }
 
 .navframe iframe {
-	top: 0;
-	left: 0;
 	width: 100%;
 }
 
 .frame iframe {
 	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 }
 
 .frameSection {
-	width: 50%;
 	position: absolute;
+	width: 50%;
 }
 
 figcaption {
@@ -234,11 +226,9 @@ main {
 }
 
 .spacer {
-	padding: 40% 0% 0% 0%;
-	width: 100%;
 	background-color: orange;
 	opacity: 0.2;
-	margin: 0;
+	padding: 40% 0% 0% 0%;
 }
 
 article {
