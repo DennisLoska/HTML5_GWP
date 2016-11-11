@@ -64,7 +64,7 @@ die Seite responsiv zu gestalten. */
 
 	.backImg {
 		background-image: url("../img/sunset-landscape-1149640_1920.jpg");
-		min-height: 11500px;
+		min-height: 12000px;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -232,6 +232,7 @@ die Seite responsiv zu gestalten. */
 		float: left;
 		margin: 5% 10% 5% 10%;
 		padding: 4%;
+		opacity: 0.9;
 		background-color: white;
 	}
 
