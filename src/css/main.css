@@ -48,6 +48,12 @@ h6 {
 	padding-bottom: 3%;
 }
 
+main>h2 {
+	background-color: whitesmoke;
+	padding-left: 4%;
+	padding-top: 3%;
+}
+
 p {
 	padding-bottom: 2%;
 }
@@ -58,7 +64,7 @@ header {
 
 .backImg {
 	background-image: url("../img/sunset-landscape-1149640_1920.jpg");
-	min-height: 12000px;
+	min-height: 15000px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -133,6 +139,7 @@ nav iframe {
 	min-height: 80px;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	z-index: 1;
 }
 
 @media screen and (max-width:1023px) {
@@ -222,9 +229,21 @@ figure {
 
 main {
 	float: left;
-	margin: 5% 10% 5% 10%;
-	padding: 4%;
+	margin: 15% 0% 5% 0%;
+	padding: 5% 0% 5% 0%;
+}
+
+.spacer {
+	padding: 40% 0% 0% 0%;
+	width: 100%;
+	background-color: orange;
+	opacity: 0.2;
+	margin: 0;
+}
+
+article {
 	background-color: whitesmoke;
+	padding: 4%;
 }
 
 textarea {
