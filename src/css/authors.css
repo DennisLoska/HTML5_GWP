@@ -23,3 +23,9 @@ h4 {
 .authorMain {
 	background-color: black;
 }
+
+
+/*
+Don´t use px for font-sizes, if at all use em relatively
+to the numbers up in the main.css!
+*/
