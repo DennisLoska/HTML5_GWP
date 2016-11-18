@@ -2,27 +2,45 @@
 	box-sizing: border-box;
 }
 
-html {
-	background: url(Background/footer_lodyas.png);
-	background-color: #01A9DB;
+.htmlAuthors{
+    background: url(Background/footer_lodyas.png);
 }
 
 p {
-	color: azure;
+	color: aliceblue;
 }
 
-figcaption {}
+figcaption {
+    color: aliceblue;
+    text-decoration: underline;
+}
 
-h2,
-h3,
-h4 {
-	color: #e42a33;
+h3,h4 {
+	color: antiquewhite;
 	font: cursive;
 }
 
-.authorMain {
-	background-color: black;
+.art{
+    background: url(Background/footer_lodyas.png);
 }
+
+.h2Main{
+    background: url(Background/footer_lodyas.png);
+    color: antiquewhite;
+    text-decoration: underline;
+    text-align: center
+}
+
+.pMain{
+    color: aliceblue;
+    text-align: center;
+}
+
+.figMain{
+    color: white;
+}
+
+
 
 
 /*
