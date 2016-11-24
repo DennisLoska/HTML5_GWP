@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 }
 
-.htmlAuthors{
-    background: url(Background/footer_lodyas.png);
+.htmlAuthors {
+	background: url(Background/footer_lodyas.png);
 }
 
 p {
@@ -11,39 +11,32 @@ p {
 }
 
 figcaption {
-    color: aliceblue;
-    text-decoration: underline;
+	color: aliceblue;
+	text-decoration: underline;
 }
 
-h3,h4 {
+h3,
+h4 {
 	color: antiquewhite;
 	font: cursive;
 }
 
-.art{
-    background: url(Background/footer_lodyas.png);
+.art {
+	background: url(Background/footer_lodyas.png);
 }
 
-.h2Main{
-    background: url(Background/footer_lodyas.png);
-    color: antiquewhite;
-    text-decoration: underline;
-    text-align: center
+.h2Main {
+	background: url(Background/footer_lodyas.png);
+	color: antiquewhite;
+	text-decoration: underline;
+	text-align: center
 }
 
-.pMain{
-    color: aliceblue;
-    text-align: center;
+.pMain {
+	color: aliceblue;
+	text-align: center;
 }
 
-.figMain{
-    color: white;
+.figMain {
+	color: white;
 }
-
-
-
-
-/*
-Don´t use px for font-sizes, if at all use em relatively
-to the numbers up in the main.css!
-*/
