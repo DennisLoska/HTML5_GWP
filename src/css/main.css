@@ -1,5 +1,5 @@
 /* Zunächst werden die Schriftarten und Verhältnisse zwischen den
-einzelnen Schriftgrößen definiert. */
+einzelnen Schriftgrößen definiert, welche für alle Geräte gleich sind. */
 
 html {
 	background-color: #efefef;
@@ -14,22 +14,27 @@ p {
 
 h1 {
 	font-size: 1.7rem;
-	padding-bottom: 3%;
 }
 
-h2 {
+article>h2 {
 	font-size: 1.5rem;
-	padding-bottom: 3%;
+	padding: 0% 0% 3% 0%;
+}
+
+main>h2 {
+	font-size: 1.5rem;
+	background-color: whitesmoke;
+	padding: 4% 30% 0% 30%;
 }
 
 h3 {
 	font-size: 1.3rem;
-	padding-bottom: 3%;
+	padding: 7% 0% 4% 0%;
 }
 
 h4 {
 	font-size: 1.1rem;
-	padding-bottom: 3%;
+	padding: 5% 0% 5% 0%;
 }
 
 h5 {
@@ -44,28 +49,15 @@ small {
 /* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
 die Seite responsiv zu gestalten. */
 
-main>h2 {
-	background-color: whitesmoke;
-	padding-left: 4%;
-	padding-top: 3%;
-}
-
-p {
-	padding-bottom: 2%;
-}
-
-header {
-	width: 100%;
-}
-
 .backImg {
 	background-attachment: fixed;
 	background-image: url("../img/sunset-landscape-1149640_1920.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 15000px;
-	padding-top: 35%;
+	padding-top: 20%;
+	height: 100%;
+	padding-bottom: 870%;
 }
 
 #mainImg {
@@ -74,7 +66,8 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 1440px;
+	height: 100%;
+	padding-bottom: 25%;
 }
 
 #headline {
@@ -91,14 +84,6 @@ header {
 	line-height: 0.8;
 	padding: 24% 0% 24% 0%;
 	text-align: center;
-}
-
-footer {
-	padding-bottom: 10%;
-}
-
-nav {
-	width: inherit;
 }
 
 nav div {
@@ -138,37 +123,6 @@ nav iframe {
 	z-index: 1;
 }
 
-@media screen and (max-width:1023px) {
-	nav iframe {
-		min-height: 316px;
-		position: relative;
-	}
-	nav {
-		min-height: 316px;
-	}
-	#mainImg {
-		font-size: 5px;
-		padding-top: 60%;
-	}
-}
-
-@media screen and (max-width:1023px) {
-	ul.navList {
-		position: relative;
-	}
-	ul.navList li.icon {
-		display: none;
-	}
-	ul.navList li {
-		display: inline;
-		float: none;
-	}
-	ul.navList li a {
-		display: block;
-		text-align: left;
-	}
-}
-
 .navUL {
 	background-color: lightskyblue;
 }
@@ -180,12 +134,11 @@ section iframe {
 .frame {
 	overflow: hidden;
 	padding-bottom: 56.25%;
-	/* 56.25% */
+	/* 56.25% for Youtube-iFrame*/
 	position: relative;
-	width: 100%;
 }
 
-.navframe iframe {
+nav iframe {
 	width: 100%;
 }
 
@@ -221,7 +174,7 @@ figure {
 
 main {
 	float: left;
-	margin: 15% 0% 5% 0%;
+	margin: 25% 0% 5% 0%;
 	padding: 5% 0% 5% 0%;
 }
 
@@ -233,7 +186,7 @@ main {
 
 article {
 	background-color: whitesmoke;
-	padding: 4%;
+	padding: 1% 30% 4% 30%;
 }
 
 textarea {
@@ -244,9 +197,102 @@ a {
 	color: blue;
 }
 
-a:active {
-	color: violet;
+
+/* Beginn der Anpassung an mobile Geräte */
+
+
+/* Breakpoint für Tablets */
+
+@media screen and (max-width:769px) {
+	ul li {
+		padding-left: 4%;
+	}
+	ul.navList li.icon {
+		display: none;
+	}
+	ul.navList li {
+		font-size: 1.4em;
+	}
+	li a {
+		color: black;
+	}
+	#headline {
+		font-size: 7em;
+		padding-top: 50%;
+	}
+	.slogan {
+		font-size: 1em;
+		padding: 15% 0% 15% 0%;
+	}
+	main {
+		margin: 55% 0% 5% 0%;
+	}
+	.spacer {
+		padding: 90% 0% 0% 0%;
+	}
+	main>h2 {
+		padding: 4% 2% 0% 2%;
+	}
+	article {
+		padding: 1% 2% 4% 2%;
+	}
+	.backImg {
+		padding-bottom: 1500%;
+	}
+	#mainImg {
+		padding-bottom: 100%;
+	}
 }
 
 
-/* tempäre Farbgebung zum leichten Workflow */
+/* Breakpoint für Smartphones */
+
+@media screen and (max-width:481px) {
+	nav iframe {
+		min-height: 362px;
+		position: relative;
+	}
+	ul.navList li.icon {
+		display: none;
+	}
+	ul.navList li {
+		display: inline;
+		float: none;
+		font-size: 1.6em;
+	}
+	li a {
+		color: black;
+	}
+	nav a {
+		border-bottom: 1px solid white;
+	}
+	ul li {
+		padding-left: 0%;
+	}
+	#headline {
+		font-size: 3.2em;
+		padding-top: 55%;
+	}
+	.slogan {
+		font-size: 0.6em;
+		padding: 25% 0% 25% 0%;
+	}
+	main {
+		margin: 95% 0% 5% 0%;
+	}
+	.spacer {
+		padding: 130% 0% 0% 0%;
+	}
+	main>h2 {
+		padding: 4% 2% 0% 2%;
+	}
+	article {
+		padding: 1% 2% 4% 2%;
+	}
+	.backImg {
+		padding-bottom: 4000%;
+	}
+	#mainImg {
+		padding-bottom: 100%;
+	}
+}
