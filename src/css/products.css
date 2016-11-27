@@ -1,13 +1,15 @@
 .frame {
 	overflow: hidden;
-	padding-bottom: 56.25%;
+	padding-bottom: 45%;
 	/* 56.25% for Youtube-iFrame*/
 	position: relative;
 	margin-bottom: 10%;
+	width: 80%;
 }
 
 main {
 	background-color: whitesmoke;
+	margin-top: 0;
 }
 
 main>h2 {
