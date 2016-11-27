@@ -22,11 +22,11 @@ h4 {
 }
 
 .art {
-	background: url(Background/footer_lodyas.png);
+	background: url(../img/footer_lodyas.png);
 }
 
 .h2Main {
-	background: url(Background/footer_lodyas.png);
+	background: url(../img/footer_lodyas.png);
 	color: antiquewhite;
 	text-decoration: underline;
 	text-align: center
