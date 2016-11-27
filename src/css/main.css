@@ -308,4 +308,7 @@ a {
 		padding-left: 0;
 		font-size: 1.2em;
 	}
+	nav iframe {
+		position: relative;
+	}
 }
