@@ -2,7 +2,7 @@
 einzelnen Schriftgrößen definiert, welche für alle Geräte gleich sind. */
 
 html {
-	background-color: #efefef;
+	background-color: whitesmoke;
 	font-family: fantasy;
 	font-size: 20px;
 }
@@ -129,13 +129,6 @@ nav iframe {
 
 section iframe {
 	height: 100%;
-}
-
-.frame {
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	/* 56.25% for Youtube-iFrame*/
-	position: relative;
 }
 
 nav iframe {
