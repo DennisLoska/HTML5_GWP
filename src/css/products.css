@@ -1,19 +1,29 @@
 .frame {
 	overflow: hidden;
-	padding-bottom: 45%;
+	padding-bottom: 56.25%;
 	/* 56.25% for Youtube-iFrame*/
 	position: relative;
 	margin-bottom: 10%;
-	width: 80%;
+	width: 100%;
+}
+
+html {
+	background: url(../img/paper.png);
+	background-attachment: fixed;
 }
 
 main {
 	background-color: whitesmoke;
 	margin-top: 0;
+	width: 70%;
+	margin-left: 15%;
+	padding-bottom: 50%;
+	padding-top: 10%;
 }
 
 main>h2 {
 	padding-top: 3.5%;
+	padding-left: 15%;
 }
 
 h3 {
@@ -21,10 +31,12 @@ h3 {
 }
 
 article {
-	padding-bottom: 0;
+	padding: 0;
+	padding: 1% 15% 4% 15%;
 }
 
 img[alt="Garmin Edge 1000"] {
+	padding-top: 5%;
 	width: 50%;
 	margin-left: 20%;
 }
@@ -40,14 +52,27 @@ img[alt="Garmin Edge 1000"]+figcaption {
 
 /* Breakpoint für Tablets */
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:800px) {
 	.frame {
-		width: 190%;
-		padding-bottom: 107.5%;
+		width: 100%;
+		padding-bottom: 56.25%;
+	}
+	main {
+		margin: 0;
+		padding: 20% 4% 50% 4%;
+		width: 92%;
+	}
+	main>h2 {
+		padding-left: 0%;
+	}
+	article {
+		width: 100%;
+		margin: 0;
+		padding: 1% 0% 4% 0%;
 	}
 }
 
 
 /* Breakpoint für Smartphones */
 
-@media screen and (max-width:481px) {}
+@media screen and (max-width:600px) {}
