@@ -289,4 +289,7 @@ a {
 	#mainImg {
 		padding-bottom: 100%;
 	}
+	p {
+		padding: 0% 2% 0% 2%;
+	}
 }
