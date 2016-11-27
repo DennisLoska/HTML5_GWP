@@ -21,3 +21,31 @@ h3 {
 article {
 	padding-bottom: 0;
 }
+
+img[alt="Garmin Edge 1000"] {
+	width: 50%;
+	margin-left: 20%;
+}
+
+img[alt="Garmin Edge 1000"]+figcaption {
+	margin-left: 20%;
+	width: 70%;
+}
+
+
+/* Beginn der Anpassung an mobile Geräte */
+
+
+/* Breakpoint für Tablets */
+
+@media screen and (max-width:769px) {
+	.frame {
+		width: 190%;
+		padding-bottom: 107.5%;
+	}
+}
+
+
+/* Breakpoint für Smartphones */
+
+@media screen and (max-width:481px) {}
