@@ -293,3 +293,19 @@ a {
 		padding: 0% 2% 0% 2%;
 	}
 }
+
+
+/* Query für Landscape-Modus */
+
+@media only screen and (orientation: landscape) and (max-width:800px) {
+	li,
+	li a {
+		float: none;
+		margin: 0;
+	}
+	ul.navList li {
+		display: inline;
+		padding-left: 0;
+		font-size: 1.2em;
+	}
+}
