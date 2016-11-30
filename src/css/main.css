@@ -46,8 +46,9 @@ small {
 }
 
 
-/* Die Elemente werden jetzt im DOM mit Hilfe von Margin und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
-die Seite responsiv zu gestalten. */
+/* Die Elemente werden jetzt im DOM mit Hilfe von Margin, Padding und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
+die Seite responsiv zu gestalten.
+Wir haben uns für die Desktop-First Variante entschieden, da es zunächst leichter erschien, eine Desktop-Version der Seite zu gestalten, von der aus man anschließend per Medie-Queries die mobile Versionen implementieren könnte. Im Nachhinein betrachtet würde diesen Blog die mobile First Variante mehr Sinn ergeben, da ein Blog, welcher an Radfahrer gerichtet ist, eventuel öfter unterwegs gelesen wird, als Zuhause am Desktop-PC. Daher würden wir beim nächsten mal zuerst schauen, über welches Endgerät ein durchschnittlicher Besucher der Webseite am wahrscheinlichsten diese besuchen würde, um dementsprechend den Fokus auf diesen Gerätetyp zu legen.*/
 
 .backImg {
 	background-attachment: fixed;
