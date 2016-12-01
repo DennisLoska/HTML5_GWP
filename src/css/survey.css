@@ -21,7 +21,7 @@ main {
 
 @media screen and (max-width:600px) {
         nav iframe {
-        min-height: 340px;
+        min-height: 368px;
         position: relative;
     }
     main {
