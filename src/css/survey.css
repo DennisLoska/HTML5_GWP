@@ -11,6 +11,7 @@ img {
 form {
     background-color: white;
     padding: 5%;
+    box-shadow:
 }
 fieldset{
     border: none;
@@ -43,7 +44,33 @@ input[type="text"],input[type="number"]{
     line-height: 30px;
     font-size: 18px;
     margin-bottom: 5%
+}
+input[type="submit"],input[type="reset"]{
+    margin: 2.5% 2.5%;
+    display: inline-block;
+}
 
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+form {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 /* Beginn der Anpassung an mobile Geräte */
