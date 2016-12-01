@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 }
 
-.htmlAuthors {
+html,
+h2,
+article {
 	background: url(../img/footer_lodyas.png);
 }
 
@@ -15,33 +17,27 @@ figcaption {
 	text-decoration: underline;
 }
 
+h2,
 h3,
 h4 {
-	color: antiquewhite;
+	color: whitesmoke;
 	font: cursive;
 }
 
-.art {
-	padding-top: 0%;
-	background: url(../img/footer_lodyas.png);
+article {
+	padding-top: 0;
 }
 
-.h2Main {
-	background: url(../img/footer_lodyas.png);
-	color: antiquewhite;
+h2 {
 	text-decoration: underline;
 	text-align: center;
-	padding-bottom: 4%;
+	margin-bottom: 3%;
 }
 
-.pMain {
+main>p {
 	color: aliceblue;
 	font-size: 1.2em;
 	text-align: center;
-}
-
-.figMain {
-	color: white;
 }
 
 main {
