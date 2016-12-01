@@ -164,20 +164,19 @@ a {
 /* Breakpoint für Tablets */
 
 @media screen and (max-width:800px) {
-    ul li {
-        padding-left: 4%;
-    }
+
     ul.navList li.icon {
         display: none;
     }
-    ul.navList li {
-        font-size: 1.4em;
+    nav ul li {
+        margin-left: 3.5%;
     }
     li a {
         color: black;
+        font-size: 1.2em;
     }
     #headline {
-        font-size: 7em;
+        font-size: 6em;
         padding-top: 50%;
     }
     .slogan {
@@ -207,10 +206,13 @@ a {
 
 /* Breakpoint für Smartphones */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:720px) {
     nav iframe {
-        min-height: 362px;
+        min-height: 368px;
         position: relative;
+    }
+     {
+        background-color: black;
     }
     ul.navList li.icon {
         display: none;
@@ -218,13 +220,16 @@ a {
     ul.navList li {
         display: inline;
         float: none;
-        font-size: 1.6em;
     }
     li a {
         color: black;
+        font-size: 28px;
     }
     nav a {
         border-bottom: 1px solid white;
+    }
+    nav ul li {
+        margin-left: 0%;
     }
     ul li {
         padding-left: 0%;

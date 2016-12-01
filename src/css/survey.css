@@ -20,6 +20,10 @@ main {
 /* Breakpoint für Smartphones */
 
 @media screen and (max-width:600px) {
+        nav iframe {
+        min-height: 340px;
+        position: relative;
+    }
     main {
         margin: 8% 5% 0% 5%;
         width: 90%;
