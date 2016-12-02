@@ -1,162 +1,208 @@
+/*
+Wir haben uns für die Desktop-First Variante entschieden, da es zunächst leichter erschien, eine Desktop-Version der Seite zu gestalten, von der aus man anschließend per Medie-Queries die mobile Versionen implementieren könnte. Im Nachhinein betrachtet würde diesen Blog die mobile First Variante mehr Sinn ergeben, da ein Blog, welcher an Radfahrer gerichtet ist, eventuel öfter unterwegs gelesen wird, als Zuhause am Desktop-PC. Daher würden wir beim nächsten mal zuerst schauen, über welches Endgerät ein durchschnittlicher Besucher der Webseite am wahrscheinlichsten diese besuchen würde, um dementsprechend den Fokus auf diesen Gerätetyp zu legen.
+
+Anden HTML-Dateien wurden bis auf sehr wenige Außnahmen keine Veränderungen vorgenommen. Es wuden lediglich in der Index.html verienzlte Elemente mit einem Attribut für CSS-Klassen ausgestattet und widerum vereinzelte Elemente in die Index.html hinzugefügt. Dies ist damit begründet, dass wir einen Parallax Effekt erzeugen wollten, wofür zusätzliche Elemente nötig waren. Die zusätzlich gestellten Klassen ergeben sich hauptsächlich aus der Naigationsbar, da diese mittels Iframe eingebunden ist, und es daher leichter nachzuvollziehen ist, um welche Elemente es sich beim Gestalten genau handelt. Zudem werden die Elemente innnerhalb der Naigationsleiste sehr häufig verwendet, da es des Iframes wegen etwas komplizierter ist, die Navigationsleiste responsive zu gestalten.
+
+Letztendlich haben wir uns für ein responsive Design entschieden, da dieses zeitgemäß ist und somit in einer zuküfitgen Arbeitsstelle ein must have im Repertoire eines Webentwicklers darstellt. Außerdem könen so mehr Menschen erreicht werden.
+
+Wir haben auch versucht, viele verschiedene Selektoren zu verwenden, haben aber auf Grund der Aufgabenstellung darauf verzichtet, zu viele Klassen und IDs als Attribute für einzelne Elemente festzulegen, damit der HTMl-Bereich möglichst unangetastet bleibt. Es wurden lediglich aus gestalterischen Gründen in der Index.html die eine oder andere Klasse bzw. ID hinzugefügt. Für die restliche Gestaltung wurde vor allem mit Spezifität, "Nachbar-, Kinder, und Enkelelementen"gearbeitet. Weitehin wurde bei der Implementierung darauf geachtet relative werde wie z.B. em oder % anstatt px zu verwenden. Die einzige Ausnahme bildet das Iframe, in welcher sich die avigation befindet, da dieses eine feste Angab aus technischen Gründen benötigt. Die restlichen Größen, wie z.B. Schriftgröße orientieren sich an den Elternelementen bzw. im Falle der Schrift an den vordefinierten Größen, welche als allererstes in dieser main.css-Datei implementiert wurden. Aus Gründen der Übersichtlichkeit und des besseren Workflows haben wir uns dafü entschieden, einige Teile des CSS für die einzelnen Seiten in je eigene CSS-Dateien zu packen. Eigenschaften, welche allerdings Global Anwendung finden, werden in der main.css realisiert. I den anderen CSS-Dateien erfolgt eine tiefergehende Spezifizierung, wie z.B. bei den Media-Queries.
+Abschließend ist zu erwähnen, dass vor dem eigentlich Beginn der CSS-Gestaltung eine normalization.css bzw. foundation.css implementiert wurde, um viele Eigenschaften, welche verschiedene Browser von Haus aus zur Verfügung stellen, zu vereinheitlichen bzw. ganz zu resetten, damit von Anfang an eine stabile Implementierug gewährleistet wid.
+
+Falls Sie noch Fragen haben sollten, stehe wir Ihnen gerne zur Verfügung.
+*/
+
+
 /* Zunächst werden die Schriftarten und Verhältnisse zwischen den
 einzelnen Schriftgrößen definiert, welche für alle Geräte gleich sind. */
 
 html {
-    background-color: whitesmoke;
-    font-family: fantasy;
-    font-size: 20px;
-}
-p {
-    font-size: 0.8rem;
-    line-height: 1.3;
-}
-h1 {
-    font-size: 1.7rem;
-}
-article>h2 {
-    font-size: 1.5rem;
-    padding: 0% 0% 3% 0%;
-}
-main>h2 {
-    font-size: 1.5rem;
-    background-color: whitesmoke;
-    padding: 4% 30% 0% 30%;
-}
-h3 {
-    font-size: 1.3rem;
-    padding: 7% 0% 4% 0%;
-}
-h4 {
-    font-size: 1.1rem;
-    padding: 5% 0% 5% 0%;
-}
-h5 {
-    font-size: 0.9rem;
-}
-small {
-    font-size: 0.8rem
+	background-color: whitesmoke;
+	font-family: fantasy;
+	font-size: 20px;
 }
 
-/* Die Elemente werden jetzt im DOM mit Hilfe von Margin, Padding und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um
-die Seite responsiv zu gestalten.
-Wir haben uns für die Desktop-First Variante entschieden, da es zunächst leichter erschien, eine Desktop-Version der Seite zu gestalten, von der aus man anschließend per Medie-Queries die mobile Versionen implementieren könnte. Im Nachhinein betrachtet würde diesen Blog die mobile First Variante mehr Sinn ergeben, da ein Blog, welcher an Radfahrer gerichtet ist, eventuel öfter unterwegs gelesen wird, als Zuhause am Desktop-PC. Daher würden wir beim nächsten mal zuerst schauen, über welches Endgerät ein durchschnittlicher Besucher der Webseite am wahrscheinlichsten diese besuchen würde, um dementsprechend den Fokus auf diesen Gerätetyp zu legen.*/
+p {
+	font-size: 0.8rem;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 1.7rem;
+}
+
+article>h2 {
+	font-size: 1.5rem;
+	padding: 0% 0% 3% 0%;
+}
+
+main>h2 {
+	font-size: 1.5rem;
+	background-color: whitesmoke;
+	padding: 4% 30% 0% 30%;
+}
+
+h3 {
+	font-size: 1.3rem;
+	padding: 7% 0% 4% 0%;
+}
+
+h4 {
+	font-size: 1.1rem;
+	padding: 5% 0% 5% 0%;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+small {
+	font-size: 0.8rem
+}
+
+
+/* Die Elemente werden jetzt im DOM mit Hilfe von Margin, Padding und Float richttig positioniert. Es folgt die Anpassung an das body-Element. Anschließend werden Größen in Prozent angegeben, um die Seite responsiv zu gestalten. */
 
 .backImg {
-    background-attachment: fixed;
-    background-image: url("../img/sunset-landscape-1149640_1920.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 20%;
-    height: 100%;
-    padding-bottom: 870%;
+	background-attachment: fixed;
+	background-image: url("../img/sunset-landscape-1149640_1920.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20%;
+	height: 100%;
+	padding-bottom: 870%;
 }
+
 #mainImg {
-    background-attachment: fixed;
-    background-image: url("../img/cycling-655565_1280.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    padding-bottom: 25%;
+	background-attachment: fixed;
+	background-image: url("../img/cycling-655565_1280.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding-bottom: 25%;
 }
+
 #headline {
-    color: #DBDBDB;
-    font-size: 8.5em;
-    padding-top: 23%;
-    text-align: center;
-    text-shadow: 0 -2px 1px #FFFFFF, 0 2.5px 1px #666666;
+	color: #DBDBDB;
+	font-size: 8.5em;
+	padding-top: 23%;
+	text-align: center;
+	text-shadow: 0 -2px 1px #FFFFFF, 0 2.5px 1px #666666;
 }
+
 #underline {
-    font-size: 8.5em;
-    font-style: normal;
-    line-height: 0.8;
-    padding: 24% 0% 24% 0%;
-    text-align: center;
+	font-size: 8.5em;
+	font-style: normal;
+	line-height: 0.8;
+	padding: 24% 0% 24% 0%;
+	text-align: center;
 }
+
 nav div {
-    background-color: lightblue;
+	background-color: lightblue;
 }
+
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
 }
+
 ul li {
-    float: left;
+	float: left;
 }
+
 li a {
-    color: white;
-    display: block;
-    padding: 32px 16px;
-    text-align: center;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 32px 16px;
+	text-align: center;
+	text-decoration: none;
 }
+
 li a:hover {
-    background-color: #456;
+	background-color: #456;
 }
+
 nav iframe {
-    border: none;
-    max-height: 80px;
-    min-height: 80px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: fixed;
-    z-index: 1;
+	border: none;
+	max-height: 80px;
+	min-height: 80px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: fixed;
+	z-index: 1;
 }
+
 .navUL {
-    background-color: lightskyblue;
+	background-color: lightskyblue;
 }
+
 section iframe {
-    height: 100%;
+	height: 100%;
 }
+
 nav iframe {
-    width: 100%;
+	width: 100%;
 }
+
 .frame iframe {
-    position: absolute;
-    width: 100%;
+	position: absolute;
+	width: 100%;
 }
+
 .frameSection {
-    position: absolute;
-    width: 50%;
+	position: absolute;
+	width: 50%;
 }
+
 figcaption {
-    padding-top: 1%
+	padding-top: 1%
 }
+
 li figcaption {
-    display: none;
+	display: none;
 }
+
 header>h1 {
-    display: none;
+	display: none;
 }
+
 header>figure {
-    padding: 1.5% 0% 1.5% 0%;
+	padding: 1.5% 0% 1.5% 0%;
 }
+
 figure {
-    padding: 2.5% 0% 5.5% 0%;
+	padding: 2.5% 0% 5.5% 0%;
 }
+
 main {
-    float: left;
-    margin: 25% 0% 5% 0%;
-    padding: 5% 0% 5% 0%;
+	float: left;
+	margin: 25% 0% 5% 0%;
+	padding: 5% 0% 5% 0%;
 }
+
 .spacer {
-    background-color: orange;
-    opacity: 0.2;
-    padding: 40% 0% 0% 0%;
+	background-color: orange;
+	opacity: 0.2;
+	padding: 40% 0% 0% 0%;
 }
+
 article {
-    background-color: whitesmoke;
-    padding: 1% 30% 4% 30%;
+	background-color: whitesmoke;
+	padding: 1% 30% 4% 30%;
 }
+
 textarea {
-    width: 100%;
+	width: 100%;
 }
+
 a {
-    color: blue;
+	color: blue;
 }
+
 
 /* Beginn der Anpassung an mobile Geräte */
 
@@ -164,142 +210,144 @@ a {
 /* Breakpoint für Tablets */
 
 @media screen and (max-width:800px) {
-
-    ul.navList li.icon {
-        display: none;
-    }
-    nav ul li {
-        margin-left: 3.5%;
-    }
-    li a {
-        color: black;
-        font-size: 1.2em;
-    }
-    #headline {
-        font-size: 6em;
-        padding-top: 50%;
-    }
-    .slogan {
-        font-size: 1em;
-        padding: 15% 0% 15% 0%;
-    }
-    main {
-        margin: 55% 0% 5% 0%;
-        width: 100%;
-    }
-    .spacer {
-        padding: 90% 0% 0% 0%;
-    }
-    main>h2 {
-        padding: 4% 2% 0% 2%;
-    }
-    article {
-        padding: 1% 2% 4% 2%;
-    }
-    .backImg {
-        padding-bottom: 1500%;
-    }
-    #mainImg {
-        padding-bottom: 100%;
-    }
+	ul.navList li.icon {
+		display: none;
+	}
+	nav ul li {
+		margin-left: 3.5%;
+	}
+	li a {
+		color: black;
+		font-size: 1.2em;
+	}
+	#headline {
+		font-size: 6em;
+		padding-top: 50%;
+	}
+	.slogan {
+		font-size: 1em;
+		padding: 15% 0% 15% 0%;
+	}
+	main {
+		margin: 55% 0% 5% 0%;
+		width: 100%;
+	}
+	.spacer {
+		padding: 90% 0% 0% 0%;
+	}
+	main>h2 {
+		padding: 4% 2% 0% 2%;
+	}
+	article {
+		padding: 1% 2% 4% 2%;
+	}
+	.backImg {
+		padding-bottom: 1500%;
+	}
+	#mainImg {
+		padding-bottom: 100%;
+	}
 }
+
 
 /* Breakpoint für Smartphones */
 
 @media screen and (max-width:720px) {
-    nav iframe {
-        min-height: 368px;
-        position: relative;
-    }
-     {
-        background-color: black;
-    }
-    ul.navList li.icon {
-        display: none;
-    }
-    ul.navList li {
-        display: inline;
-        float: none;
-    }
-    li a {
-        color: black;
-        font-size: 28px;
-    }
-    nav a {
-        border-bottom: 1px solid white;
-    }
-    nav ul li {
-        margin-left: 0%;
-    }
-    ul li {
-        padding-left: 0%;
-    }
-    #headline {
-        font-size: 3.2em;
-        padding-top: 55%;
-    }
-    .slogan {
-        font-size: 0.6em;
-        padding: 25% 0% 25% 0%;
-    }
-    main {
-        margin: 95% 0% 5% 0%;
-    }
-    .spacer {
-        padding: 130% 0% 0% 0%;
-    }
-    main>h2 {
-        padding: 4% 2% 0% 2%;
-    }
-    article {
-        padding: 1% 2% 4% 2%;
-    }
-    .backImg {
-        padding-bottom: 4000%;
-    }
-    #mainImg {
-        padding-bottom: 100%;
-    }
-    p {
-        padding: 0% 2% 0% 2%;
-    }
+	nav iframe {
+		min-height: 368px;
+		position: relative;
+	}
+	{
+		background-color: black;
+	}
+	ul.navList li.icon {
+		display: none;
+	}
+	ul.navList li {
+		display: inline;
+		float: none;
+	}
+	li a {
+		color: black;
+		font-size: 28px;
+	}
+	nav a {
+		border-bottom: 1px solid white;
+	}
+	nav ul li {
+		margin-left: 0%;
+	}
+	ul li {
+		padding-left: 0%;
+	}
+	#headline {
+		font-size: 3.2em;
+		padding-top: 55%;
+	}
+	.slogan {
+		font-size: 0.6em;
+		padding: 25% 0% 25% 0%;
+	}
+	main {
+		margin: 95% 0% 5% 0%;
+	}
+	.spacer {
+		padding: 130% 0% 0% 0%;
+	}
+	main>h2 {
+		padding: 4% 2% 0% 2%;
+	}
+	article {
+		padding: 1% 2% 4% 2%;
+	}
+	.backImg {
+		padding-bottom: 4000%;
+	}
+	#mainImg {
+		padding-bottom: 100%;
+	}
+	p {
+		padding: 0% 2% 0% 2%;
+	}
 }
+
 
 /* Query für Landscape-Modus */
 
 @media only screen and (orientation: landscape) and (max-width:800px) {
-    li,
-    li a {
-        float: none;
-        margin: 0;
-    }
-    ul.navList li {
-        display: inline;
-        padding-left: 0;
-        font-size: 1.2em;
-    }
-    nav iframe {
-        position: relative;
-    }
+	li,
+	li a {
+		float: none;
+		margin: 0;
+	}
+	ul.navList li {
+		display: inline;
+		padding-left: 0;
+		font-size: 1.2em;
+	}
+	nav iframe {
+		position: relative;
+	}
 }
+
 
 /* Query für den Print-Modus */
 
 @media print {
-    body {
-        background-color: #ffffff;
-        font-size: 10pt;
-        font-family: Arial, Helvetica, SunSans-Regular, sans-serif;
-        color: #000000;
-        padding: 0;
-        margin: 0;
-    }
-    #headline,
-    #underline {
-        display: none !important;
-    }
-    a:link:after,
-    a:visited:after {
-        content: " [" attr(href) "] ";
-    }
+	body {
+		background-color: #ffffff;
+		font-size: 10pt;
+		font-family: Arial, Helvetica, SunSans-Regular, sans-serif;
+		color: #000000;
+		padding: 0;
+		margin: 0;
+	}
+	#headline,
+	#underline {
+		display: none !important;
+	}
+	a:link:after,
+	a:visited:after {
+		content: " [" attr(href) "] ";
+	}
 }
