@@ -74,8 +74,6 @@ img[alt="Garmin Edge 1000"]+figcaption {
 		padding: 0;
 	}
 }
-
-
 /* Breakpoint für Smartphones */
 
 @media screen and (max-width:600px) {
