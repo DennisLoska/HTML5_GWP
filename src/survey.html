@@ -2,108 +2,92 @@
 <html lang="de">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<title>Umfrage</title>
-	<link rel="stylesheet" href="css/foundation.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/survey.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Umfrage</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/survey.css">
 </head>
 
 <body>
-	<header>
-		<h1>Das wird unsichtbar gemacht...</h1>
-		<nav>
-			<div class="navframe">
-				<iframe src="navigation.html" scrolling="no">
-					<!--Fallback für nicht interpretierte i-Frames -->
-					<ul>
-						<li>
-							<figure>
-								<img src="img/bloglogo.png" alt="Bloglogo">
-								<figcaption>Quelle: <a href="https://logomakr.com/0XWVXE">logomakr.com</a></figcaption>
-							</figure>
-						</li>
-						<li><a href="index.html">Beiträge</a></li>
-						<li><a href="authors.html">Wer wir sind</a></li>
-						<li><a href="products.html">Wir empfehlen</a></li>
-						<li><a href="survey.html">Eure Meinung</a></li>
-					</ul>
-				</iframe>
-			</div>
-		</nav>
-	</header>
+    <header>
+        <h1>Das wird unsichtbar gemacht...</h1>
+        <nav>
+            <iframe src="navigation.html"></iframe>
+        </nav>
+    </header>
 
-	<main>
-		<h2>Eure Meinung ist gefragt!</h2>
-		<section>
-			<h3>Jede Stimme ist uns wichtig - dauert nur 2 Minuten!</h3>
-			<p>
-				Wir freuen uns über jede Art von Feedback die wir bekommen, deshalb laden wir euch ein eure Wünsche für zukünftige Beiträge und allgemeine Verbesserungsvorschläge über diese Umfrage mitzuteilen.
-			</p>
-			<img src="img/racing-bicycle-161449_1280.png" alt="Rennrad">
-		</section>
+    <main>
+        <h2>Eure Meinung ist gefragt!</h2>
+        <section>
+            <h3>Jede Stimme ist uns wichtig - dauert nur 2 Minuten!</h3>
+            <p>
+                Wir freuen uns über jede Art von Feedback die wir bekommen, deshalb laden wir euch ein eure Wünsche für zukünftige Beiträge und allgemeine Verbesserungsvorschläge über diese Umfrage mitzuteilen.
+            </p>
+            <img src="img/racing-bicycle-161449_1280.png" alt="Rennrad">
+        </section>
 
-		<form>
-			<fieldset>
-				<legend>Ihre Meinung</legend>
-				<label for="feedback"> </label>
-				<textarea id="feedback" name="survey" cols="45" rows="10" maxlength="450" placeholder="Ihre Meinung..."></textarea>
-			</fieldset>
-			<fieldset class="radio">
-				<legend>Ihre Bewertung auf einer Skala von 1 bis 10:</legend>
-				<label for="grade1">1</label>
-				<input type="radio" name="grade" value="1" id="grade1">
-				<label for="grade2">2</label>
-				<input type="radio" name="grade" value="2" id="grade2">
-				<label for="grade3">3</label>
-				<input type="radio" name="grade" value="3" id="grade3">
-				<label for="grade4">4</label>
-				<input type="radio" name="grade" value="4" id="grade4">
-				<label for="grade5">5</label>
-				<input type="radio" name="grade" value="5" id="grade5" checked="checked">
-				<label for="grade6">6</label>
-				<input type="radio" name="grade" value="6" id="grade6">
-				<label for="grade7">7</label>
-				<input type="radio" name="grade" value="7" id="grade7">
-				<label for="grade8">8</label>
-				<input type="radio" name="grade" value="8" id="grade8">
-				<label for="grade9">9</label>
-				<input type="radio" name="grade" value="9" id="grade9">
-				<label for="grade10">10</label>
-				<input type="radio" name="grade" value="10" id="grade10">
-			</fieldset>
-			<fieldset>
-				<legend>Ihr Name</legend>
-				<label for="firstName">Vorname:</label>
-				<input type="text" id="firstName" name="name" placeholder="Max">
-				<label for="lastName">Nachname:</label>
-				<input type="text" id="lastName" name="name" placeholder="Mustermann">
-			</fieldset>
-			<fieldset>
-				<legend>Ihr Alter</legend>
-				<div>
-					<label for="age">Alter:</label>
-					<input type="number" name="age" id="age">
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Geschlecht</legend>
-				<label for="female">weiblich:</label>
-				<input type="radio" id="female" name="gender" value="f">
-				<label for="male">männlich:</label>
-				<input type="radio" id="male" name="gender" value="m">
-			</fieldset>
-			<input type="submit">
-			<input type="reset">
-		</form>
-		<footer>
-			<section>
-				<h3>Das war´s auch schon.</h3>
-				<p>Wir bedanken uns für eurer Mitwirken!</p>
-			</section>
-		</footer>
-	</main>
+        <form>
+            <fieldset>
+                <legend>Ihre Meinung</legend>
+                <label for="feedback"> </label>
+                <textarea id="feedback" name="survey" cols="45" rows="10" maxlength="450" placeholder="Ihre Meinung..."></textarea>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Ihre Bewertung auf einer Skala von 1 bis 10:</legend>
+                <label for="grade1">1</label>
+                <input type="radio" name="grade" value="1" id="grade1">
+                <label for="grade2">2</label>
+                <input type="radio" name="grade" value="2" id="grade2">
+                <label for="grade3">3</label>
+                <input type="radio" name="grade" value="3" id="grade3">
+                <label for="grade4">4</label>
+                <input type="radio" name="grade" value="4" id="grade4">
+                <label for="grade5">5</label>
+                <input type="radio" name="grade" value="5" id="grade5" checked="checked">
+                <label for="grade6">6</label>
+                <input type="radio" name="grade" value="6" id="grade6">
+                <label for="grade7">7</label>
+                <input type="radio" name="grade" value="7" id="grade7">
+                <label for="grade8">8</label>
+                <input type="radio" name="grade" value="8" id="grade8">
+                <label for="grade9">9</label>
+                <input type="radio" name="grade" value="9" id="grade9">
+                <label for="grade10">10</label>
+                <input type="radio" name="grade" value="10" id="grade10">
+            </fieldset>
+            <fieldset>
+                <legend>Ihr Name</legend>
+                <label for="firstName">Vorname:</label>
+                <input type="text" id="firstName" name="name" placeholder="Max">
+                <label for="lastName">Nachname:</label>
+                <input type="text" id="lastName" name="name" placeholder="Mustermann">
+            </fieldset>
+            <fieldset>
+                <legend>Ihr Alter</legend>
+                <div>
+                    <label for="age">Alter:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Geschlecht</legend>
+                <label for="female">weiblich:</label>
+                <input type="radio" id="female" name="gender" value="f">
+                <label for="male">männlich:</label>
+                <input type="radio" id="male" name="gender" value="m">
+            </fieldset>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <footer>
+            <section>
+                <h3>Das war´s auch schon.</h3>
+                <p>Wir bedanken uns für eurer Mitwirken!</p>
+            </section>
+        </footer>
+    </main>
 </body>
 
 </html>
