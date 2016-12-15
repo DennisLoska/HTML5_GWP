@@ -1,15 +1,43 @@
 #game-field {
-    display: flex;
+    background-color: lightgrey;
+    margin: 5%;
 }
-
 .memory-card {
-    width: 25%;
-    color: lightblue;
-    padding: 5%;
+    float: left;
+    margin: 1%;
+    width: 23%;
+    height: 150px;
+    background-color: blue;
 }
-
 .memory-text {
+    display: block;
+    position: relative;
     text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    visibility: hidden;
+    width: 100%;
     font-size: 2em;
     color: white;
+}
+main {
+    margin: 6% 15% 10% 15%;
+}
+section {
+    font-size: 1.5rem;
+    padding: 4% 6% 0% 6%;
+}
+h2{
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: lightgray;
+    box-shadow: 2px 2px black;
+    padding: 2%;
+    margin-top: 40px;
+}
+
+button:active {
+    box-shadow: none;
 }
