@@ -1,0 +1,15 @@
+#game-field {
+    display: flex;
+}
+
+.memory-card {
+    width: 25%;
+    color: lightblue;
+    padding: 5%;
+}
+
+.memory-text {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
