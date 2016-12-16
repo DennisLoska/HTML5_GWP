@@ -10,6 +10,11 @@
     height: 150px;
     visibility: hidden;
     background-color: blue;
+    box-shadow: 3px 3px darkgrey;
+}
+
+.memory-card:active {
+    box-shadow: none;
 }
 
 .memory-text {
@@ -39,8 +44,9 @@ h2 {
 
 button {
     background-color: lightskyblue;
-    box-shadow: 2px 2px black;
-    padding: 1%;
+    font-size: 0.6em;
+    box-shadow: 2px 2px grey;
+    padding: 1.5%;
     margin-right: 3%;
     margin-top: 40px;
 }
