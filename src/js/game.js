@@ -37,7 +37,6 @@ function solution() {
  */
 function reset() {
     active = 0;
-    "use strict";
     for (let i = 0; i < cards.length; i++) {
         cardText[i].style.visibility = "hidden";
         cards[i].style.backgroundColor = "blue";
@@ -48,41 +47,45 @@ function reset() {
  *because it is coded by a beginner.
  */
 function game() {
-    var activeCards = [];
     for (let i = 0; i < cardText.length; i += 1) {
-        cards[i].addEventListener("click", function () {
-            if (active < 2) {
-                cardText[i].style.visibility = "visible";
-                cards[i].style.backgroundColor = "red";
-                active += 1;
-                console.log(active);
-            }
-            if (active == 2) {
-                var j = 0;
-                for (let i = 0; i < cards.length; i += 1) {
-                    if (cards[i].style.backgroundColor === "red") {
-                        activeCards[j] = cards[i];
-                        console.log(j + 'j');
-                        j += 1;
-                        if (j > 1) {
-                            j = 0;
-                        }
+        addCardsListener(i);
+    }
+}
+
+function addCardsListener(i) {
+    var activeCards = [];
+    cards[i].addEventListener("click", function () {
+        if (active < 2) {
+            cardText[i].style.visibility = "visible";
+            cards[i].style.backgroundColor = "red";
+            active += 1;
+            console.log(active);
+        }
+        if (active == 2) {
+            var j = 0;
+            for (let i = 0; i < cards.length; i += 1) {
+                if (cards[i].style.backgroundColor === "red") {
+                    activeCards[j] = cards[i];
+                    console.log(j + 'j');
+                    j += 1;
+                    if (j > 1) {
+                        j = 0;
                     }
                 }
-                if (activeCards[0].innerHTML == activeCards[1].innerHTML) {
-                    activeCards[0].style.backgroundColor = "green";
-                    activeCards[1].style.backgroundColor = "green";
-                    active = 0;
-                } else if (activeCards[0].innerHTML !== activeCards[1].innerHTML) {
-                    setTimeout(function () {
-                        for (let i = 0; i < 2; i += 1) {
-                            activeCards[i].style.backgroundColor = "blue";
-                            activeCards[i].childNodes[1].style.visibility = "hidden";
-                        }
-                    }, 750);
-                    active = 0;
-                }
             }
-        });
-    }
+            if (activeCards[0].innerHTML == activeCards[1].innerHTML) {
+                activeCards[0].style.backgroundColor = "green";
+                activeCards[1].style.backgroundColor = "green";
+                active = 0;
+            } else if (activeCards[0].innerHTML !== activeCards[1].innerHTML) {
+                setTimeout(function () {
+                    for (let i = 0; i < 2; i += 1) {
+                        activeCards[i].style.backgroundColor = "blue";
+                        activeCards[i].childNodes[1].style.visibility = "hidden";
+                    }
+                }, 750);
+                active = 0;
+            }
+        }
+    });
 }
