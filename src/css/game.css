@@ -2,39 +2,49 @@
     background-color: lightgrey;
     margin: 5%;
 }
+
 .memory-card {
     float: left;
     margin: 1%;
     width: 23%;
     height: 150px;
+    visibility: hidden;
     background-color: blue;
 }
+
 .memory-text {
     display: block;
     position: relative;
     text-align: center;
     padding-top: 65px;
+    padding-bottom: 65px;
     visibility: hidden;
     width: 100%;
     font-size: 1.5em;
     color: white;
 }
+
 main {
     margin: 2% 25% 10% 25%;
 }
+
 section {
     font-size: 1.5rem;
     padding: 4% 6% 0% 6%;
 }
+
 h2 {
     margin-bottom: 5%;
 }
+
 button {
-    background-color: lightgray;
+    background-color: lightskyblue;
     box-shadow: 2px 2px black;
-    padding: 2%;
+    padding: 1%;
+    margin-right: 3%;
     margin-top: 40px;
 }
+
 button:active {
     box-shadow: none;
 }
