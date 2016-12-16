@@ -3,7 +3,7 @@ var cards = document.getElementsByClassName("memory-card");
 var check = false;
 var active = 0;
 /*
- *Shows and hies the solution for the memory game.
+ *Shows the game/memory-cards and invokes the function game()
  */
 function start() {
     "use strict";
@@ -21,9 +21,8 @@ function start() {
     }
     game();
 }
-
 /*
- *Shows and hies the solution for the memory game.
+ *Shows the solution for the memory game.
  */
 function solution() {
     "use strict";
@@ -32,7 +31,10 @@ function solution() {
         cards[i].style.backgroundColor = "blue";
     }
 }
-
+/*
+ *Resets the memory game so you can start over again
+ *A random-function would be nice
+ */
 function reset() {
     active = 0;
     "use strict";
@@ -41,7 +43,10 @@ function reset() {
         cards[i].style.backgroundColor = "blue";
     }
 }
-
+/*
+ *Main-functrion containing the algorithm for the game. It is hard to understand for beginners,
+ *because it is coded by a beginner.
+ */
 function game() {
     var activeCards = [];
     for (let i = 0; i < cardText.length; i += 1) {
@@ -62,7 +67,6 @@ function game() {
                         if (j > 1) {
                             j = 0;
                         }
-
                     }
                 }
                 if (activeCards[0].innerHTML == activeCards[1].innerHTML) {
@@ -78,9 +82,7 @@ function game() {
                     }, 750);
                     active = 0;
                 }
-
             }
-
         });
     }
 }
