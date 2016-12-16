@@ -13,31 +13,28 @@
     display: block;
     position: relative;
     text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 65px;
     visibility: hidden;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }
 main {
-    margin: 6% 15% 10% 15%;
+    margin: 2% 25% 10% 25%;
 }
 section {
     font-size: 1.5rem;
     padding: 4% 6% 0% 6%;
 }
-h2{
+h2 {
     margin-bottom: 5%;
 }
-
 button {
     background-color: lightgray;
     box-shadow: 2px 2px black;
     padding: 2%;
     margin-top: 40px;
 }
-
 button:active {
     box-shadow: none;
 }
