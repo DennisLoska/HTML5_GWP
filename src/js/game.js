@@ -2,6 +2,7 @@ var cardText = document.getElementsByClassName("memory-text");
 var cards = document.getElementsByClassName("memory-card");
 var check = false;
 var active = 0;
+var found = 0;
 /*
  *Shows the game/memory-cards and invokes the function game()
  */
@@ -43,23 +44,29 @@ function reset() {
     }
 }
 /*
- *Main-functrion containing the algorithm for the game. It is hard to understand for beginners,
- *because it is coded by a beginner.
+ *A listener is added to every memory-card. If a card is clicked the listener gets triggered and responses according to its function-body.
+ *
  */
 function game() {
     for (let i = 0; i < cardText.length; i += 1) {
         addCardsListener(i);
     }
 }
-
+/*
+ *Main-functrion containing the algorithm for the game. It is hard to understand for beginners,
+ *because it is coded by a beginner.
+ */
 function addCardsListener(i) {
     var activeCards = [];
     cards[i].addEventListener("click", function () {
-        if (active < 2) {
+        if (active < 2 && cards[i].style.backgroundColor !== "green") {
             cardText[i].style.visibility = "visible";
             cards[i].style.backgroundColor = "red";
             active += 1;
             console.log(active);
+        }
+        if (cards[i].style.backgroundColor === "green") {
+            alert("You already guees that one right!");
         }
         if (active == 2) {
             var j = 0;
@@ -77,6 +84,10 @@ function addCardsListener(i) {
                 activeCards[0].style.backgroundColor = "green";
                 activeCards[1].style.backgroundColor = "green";
                 active = 0;
+                found += 1;
+                if (found == 8) {
+                    alert("Great job!");
+                }
             } else if (activeCards[0].innerHTML !== activeCards[1].innerHTML) {
                 setTimeout(function () {
                     for (let i = 0; i < 2; i += 1) {
