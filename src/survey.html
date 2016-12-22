@@ -29,7 +29,7 @@
             <img src="img/racing-bicycle-161449_1280.png" alt="Rennrad">
         </section>
 
-        <form name="surveyForm" action="" onsubmit="return validateForm()" method="post">
+        <form name="surveyForm" action="" onsubmit="validateForm()" method="post">
             <fieldset>
                 <legend>Ihre Meinung</legend>
                 <label for="feedback"> </label>
@@ -61,23 +61,23 @@
             <fieldset>
                 <legend>Ihr Name</legend>
                 <label for="firstName">Vorname:</label>
-                <input type="text" id="firstName" name="name" placeholder="Max">
+                <input type="text" id="firstName" name="userFirstname" placeholder="Max" required>
                 <label for="lastName">Nachname:</label>
-                <input type="text" id="lastName" name="name" placeholder="Mustermann">
+                <input type="text" id="lastName" name="userLastname" placeholder="Mustermann" required>
             </fieldset>
             <fieldset>
                 <legend>Ihr Alter</legend>
                 <div>
                     <label for="age">Alter:</label>
-                    <input type="number" name="age" id="age">
+                    <input type="number" name="age" id="age" required>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Geschlecht</legend>
                 <label for="female">weiblich:</label>
-                <input type="radio" id="female" name="gender" value="f">
+                <input type="radio" id="female" name="gender" value="f" required>
                 <label for="male">männlich:</label>
-                <input type="radio" id="male" name="gender" value="m">
+                <input type="radio" id="male" name="gender" value="m" required>
             </fieldset>
             <input type="submit">
             <input type="reset">
