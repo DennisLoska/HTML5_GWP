@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>JS-Task</title>
+    <title>Hangman</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hangman.css">
@@ -19,6 +19,64 @@
         </nav>
     </header>
     <main>
+        <section>
+            <h2>Hangman</h2>
+            <p>Use the alphabet below to guess the word, or click hint to get a clue.</p>
+
+        </section>
+        <div id="alphabet-keypad" class="keypad">
+            <div class="letter-button">A</div>
+            <div class="letter-button">B</div>
+            <div class="letter-button">C</div>
+            <div class="letter-button">D</div>
+            <div class="letter-button">E</div>
+            <div class="letter-button">F</div>
+            <div class="letter-button">G</div>
+            <div class="letter-button">H</div>
+            <div class="letter-button">I</div>
+            <div class="letter-button">J</div>
+            <div class="letter-button">K</div>
+            <div class="letter-button">L</div>
+            <div class="letter-button">M</div>
+            <div class="letter-button">N</div>
+            <div class="letter-button">O</div>
+            <div class="letter-button">P</div>
+            <div class="letter-button">Q</div>
+            <div class="letter-button">R</div>
+            <div class="letter-button">S</div>
+            <div class="letter-button">T</div>
+            <div class="letter-button">U</div>
+            <div class="letter-button">V</div>
+            <div class="letter-button">W</div>
+            <div class="letter-button">X</div>
+            <div class="letter-button">Y</div>
+            <div class="letter-button">Z</div>
+        </div>
+
+        <div id="hangman-graphic" class="graphic">
+            <img class="hangman-frames" id="hangman-frame0"
+                 src="img/hangman-graphic/hangman0.jpg">
+            <img class="hangman-frames" id="hangman-frame1"
+                 src="img/hangman-graphic/hangman1.jpg">
+            <img class="hangman-frames" id="hangman-frame2"
+                 src="img/hangman-graphic/hangman2.jpg">
+            <img class="hangman-frames" id="hangman-frame3"
+                 src="img/hangman-graphic/hangman3.jpg">
+            <img class="hangman-frames" id="hangman-frame4"
+                 src="img/hangman-graphic/hangman4.jpg">
+            <img class="hangman-frames" id="hangman-frame5"
+                 src="img/hangman-graphic/hangman5.jpg">
+            <img class="hangman-frames" id="hangman-frame6"
+                 src="img/hangman-graphic/hangman6.jpg">
+            <img class="hangman-frames" id="hangman-frame7"
+                 src="img/hangman-graphic/hangman7.jpg">
+        </div>
+
+        <div class="hangman-controls">
+            <button class="btn btn-success reset" onclick="reset">Play again </button>
+            <button class="btn hint" onclick="hint"> Hint</button>
+        </div>
+
 
 
     </main>
