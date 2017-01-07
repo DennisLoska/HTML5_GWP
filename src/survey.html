@@ -29,11 +29,11 @@
             <img src="img/racing-bicycle-161449_1280.png" alt="Rennrad">
         </section>
 
-        <form>
+        <form name="surveyForm" onsubmit="validateForm()">
             <fieldset>
                 <legend>Ihre Meinung</legend>
                 <label for="feedback"> </label>
-                <textarea id="feedback" name="survey" cols="45" rows="10" maxlength="450" placeholder="Ihre Meinung..."></textarea>
+                <textarea id="feedback" name="feedBack" cols="45" rows="10" maxlength="450" placeholder="Ihre Meinung..."></textarea>
             </fieldset>
             <fieldset class="radio">
                 <legend>Ihre Bewertung auf einer Skala von 1 bis 10:</legend>
@@ -61,23 +61,23 @@
             <fieldset>
                 <legend>Ihr Name</legend>
                 <label for="firstName">Vorname:</label>
-                <input type="text" id="firstName" name="name" placeholder="Max">
+                <input type="text" id="firstName" name="firstName" placeholder="Max" required>
                 <label for="lastName">Nachname:</label>
-                <input type="text" id="lastName" name="name" placeholder="Mustermann">
+                <input type="text" id="lastName" name="lastName" placeholder="Mustermann" required>
             </fieldset>
             <fieldset>
                 <legend>Ihr Alter</legend>
                 <div>
                     <label for="age">Alter:</label>
-                    <input type="number" name="age" id="age">
+                    <input type="number" name="age" id="age" required>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Geschlecht</legend>
                 <label for="female">weiblich:</label>
-                <input type="radio" id="female" name="gender" value="f">
+                <input type="radio" id="female" name="gender" value="female" required>
                 <label for="male">männlich:</label>
-                <input type="radio" id="male" name="gender" value="m">
+                <input type="radio" id="male" name="gender" value="male" required>
             </fieldset>
             <input type="submit">
             <input type="reset">
