@@ -7,6 +7,10 @@ function validateForm() {
     var grade = document.forms["surveyForm"]["grade"].value;
     var feedBack = document.forms["surveyForm"]["feedBack"].value;
 
+
+    //checking, weither field is empty or not
+    if (name == false)
+        return alert("Name can´t be empty!");
     //checking age
     if (age >= 18) {
         isAdult = true;
