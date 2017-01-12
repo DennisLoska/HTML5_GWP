@@ -16,8 +16,9 @@ h2,p {
 
 /* Styles for the alphabet keypad */
 #alphabet-keypad{
-    margin: auto;
     text-align: center;
+    display: flex;
+    margin-left: 20%;
 }
 .letter-buttonm, .letter-disabled{
     border-radius: 50%;
@@ -35,6 +36,9 @@ h2,p {
 .letter-button{
     border: 1px solid rgb(60, 160, 210);
     color: rgb(60, 160, 210);
+    padding: 0 1% 0 1%;
+    background-color
+    margin: 0 0.1% 0 0.1%;
 }
 .letter-button:hover {
     background-color: rgb(60, 160, 210);
@@ -46,9 +50,31 @@ h2,p {
     color: lightgrey;
     cursor: default;
 }
+/*button*/
+button {
+    background-color: lightskyblue;
+    font-size: 1em;
+    box-shadow: 2px 2px grey;
+    padding: 1.5%;
+    margin-left: 3%;
+    margin-top: 40px;
+}
+
+button:active {
+    box-shadow: none;
+}
 /* Styles for the hangman graphic */
 #hangman-graphic{
     max-width: 10%;
     text-align: center;
+    margin-left: 45%;
+    margin-top: 60px;
+}
 
+#hangman-frame0{
+    opacity: 1;
+}
+
+.hangman-frames{
+    opacity: 0;
 }
