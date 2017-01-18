@@ -71,10 +71,22 @@ button:active {
     margin-top: 60px;
 }
 
+#hangman-graphic img {
+  margin-left: 1em;
+  max-width: 100%;
+}
+
 #hangman-frame0{
     opacity: 1;
 }
 
-.hangman-frames{
-    opacity: 0;
+.hangman-controls {
+  margin-top: 3em;
+  text-align: center;
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
 }
