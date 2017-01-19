@@ -1,3 +1,5 @@
+'use strict'
+
 function validateForm() {
     var age = document.forms["surveyForm"]["age"].value;
     var firstName = document.forms["surveyForm"]["firstName"].value;
