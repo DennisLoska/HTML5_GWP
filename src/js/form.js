@@ -7,7 +7,7 @@ function validateForm() {
     var grade = document.forms["surveyForm"]["grade"].value;
     var feedBack = document.forms["surveyForm"]["feedBack"].value;
 
-    validateAge(age);
+    validateName(name);
 
 
 
@@ -15,8 +15,9 @@ function validateForm() {
     alert("Vielen dank für deine Teilnahme!");
 }
 
-function validateAge(age) {
+function validateName(name) {
 
-    alert(age.search(/[1-120]{1,3}/));
+    alert(name.search(/[a-zA-Z]{1,30}/g));
+
 
 }
