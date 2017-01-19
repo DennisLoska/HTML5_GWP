@@ -11,7 +11,7 @@
     <script src="js/hangman.js"></script>
 </head>
 
-<body onload="hangman()">
+<body>
     <header>
         <h1>Das wird unsichtbar gemacht.</h1>
         <nav>
@@ -22,52 +22,20 @@
         <section>
             <h2>Hangman</h2>
             <p>Use the alphabet below to guess the word, or click hint to get a clue.</p>
-
         </section>
-        <div id="alphabet-keypad" class="keypad">
-            <div class="letter-button">A</div>
-            <div class="letter-button">B</div>
-            <div class="letter-button">C</div>
-            <div class="letter-button">D</div>
-            <div class="letter-button">E</div>
-            <div class="letter-button">F</div>
-            <div class="letter-button">G</div>
-            <div class="letter-button">H</div>
-            <div class="letter-button">I</div>
-            <div class="letter-button">J</div>
-            <div class="letter-button">K</div>
-            <div class="letter-button">L</div>
-            <div class="letter-button">M</div>
-            <div class="letter-button">N</div>
-            <div class="letter-button">O</div>
-            <div class="letter-button">P</div>
-            <div class="letter-button">Q</div>
-            <div class="letter-button">R</div>
-            <div class="letter-button">S</div>
-            <div class="letter-button">T</div>
-            <div class="letter-button">U</div>
-            <div class="letter-button">V</div>
-            <div class="letter-button">W</div>
-            <div class="letter-button">X</div>
-            <div class="letter-button">Y</div>
-            <div class="letter-button">Z</div>
+        <div class="wrapper">
+            <div id="buttons">
         </div>
-
-        <p id="clue">Clue: </p>
+        <p id="catagoryName"></p>
+        <div id="hold"> </div>
         <p id="mylives"></p>
-        <p id="catecoryName"></p>
-
-        <div id="hangman-graphic" class="graphic">
-            <img class="hangman-frames" id="hangman-frame0"
-                 src="img/hangman-graphic/hangman0.jpg">
+        <p id="clue">Clue -</p>
+         <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+        <div class="container">
+          <button id="hint">Hint</button>
+          <button id="reset">Play again</button>
+         </div>
         </div>
-
-        <div class="hangman-controls">
-            <button class="btn btn-success reset" onclick="reset">Play again </button>
-            <button class="btn hint" onclick="hint"> Hint</button>
-        </div>
-
-        <div id="hold"></div>
 
     </main>
 </body>
