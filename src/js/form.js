@@ -1,5 +1,7 @@
 'use strict';
 
+var returnValue = false;
+
 function validateForm() {
     var age = document.forms["surveyForm"]["age"].value;
     var firstName = document.forms["surveyForm"]["firstName"].value;
@@ -20,63 +22,81 @@ function validateForm() {
 }
 
 function validateFeedBack(feddBack) {
-    if (feddBack == "")
+    if (feddBack == "") {
         alert("Bitte lassen Sie uns mehr über Ihre Meinung erfahren");
-    return false;
-    document.getElementById("feedBack").focus();
-    else return true;
-
+        document.getElementById("feedBack").focus();
+        returnValue = false;
+    }
+    else returnValue = true;
+    return returnValue;
 }
 
 function validateGrade(grade) {
     var gradeText;
-    if (grade == 5)
+    if (grade == 5) {
         gradeText = "Vielen Dank für Ihre bewertung";
-    return true;
-    else if (grade < 5)
+        alert(gradeText);
+        returnValue = false;
+    }
+    else if (grade < 5) {
         gradeText = "Wir hoffen, dass wir unseren Blog so verbessern, dmamit er auch Ihnen gefällt!";
-    return false;
-    else if (grade > 5)
+        alert(gradeText);
+        returnValue = false;
+    }
+    else if (grade > 5) {
         gradeText = "Wir frueen uns sehr, dass Ihnen unser Blog gefällt!";
-    return true;
+        alert(gradeText);
+        returnValue = true;
+    }
+    return returnValue;
 }
 
 function validateGender(gender) {
-    if (gender == "")
+    if (gender == "") {
         alert("Bitte wählen Sie Ihr Geschlecht aus!");
-    return false;
-    else if (gender.equals("male") || gender.equals("female"))
-        return true;
-    else return false;
+        returnValue = false;
+    }
+    else if (gender == "male" || gender == "female") {
+        returnValue = true;
+    }
+    return returnValue;
 }
 
 function validateAge(age) {
-    if (age < 5 || age > 130)
+    if (age < 5 || age > 130) {
         alert("Bitte geben Sie Ihr richtiges Alter an!");
-    document.getElementById("age").focus();
-    return false;
-    else return true;
+        document.getElementById("age").focus();
+        returnValue = false;
+    }
+    else returnValue = true;
+    return returnValue;
 }
 
 function validateFirstName(firstName) {
-    if (firstName == "")
+    if (firstName == "") {
         alert("Bitte gib deinen Vornamen an!");
-    document.getElementById("firstName").focus();
-    return false;
-    else return true;
+        document.getElementById("firstName").focus();
+        returnValue = false;
+    }
+    else returnValue = true;
+    return returnValue;
 }
 
 function validateLastName(lastName) {
-    if (lastName == "")
+    if (lastName == "") {
         alert("Bitte gib deinen Nachnamen an!");
-    document.getElementById("lastName").focus();
-    return false;
-    else return true;
+        document.getElementById("lastName").focus();
+        returnValue = false;
+    }
+    else returnValue = true;
+    return returnValue;
 }
 
 function validateName(name) {
-    if (name == "")
+    if (name == "") {
         alert("Geben Sie Ihren Vor- und Nachnamen an!");
-    return false;
-    else return true;
+        returnValue = false;
+    }
+    else returnValue = true;
+    return returnValue;
 }
