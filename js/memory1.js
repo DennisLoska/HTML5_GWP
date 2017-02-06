@@ -1,3 +1,4 @@
+"use strict";
 var cardText = document.getElementsByClassName("memory-text");
 var cards = document.getElementsByClassName("memory-card");
 var check = false;
@@ -7,7 +8,6 @@ var found = 0;
  *Shows the game/memory-cards and invokes the function game()
  */
 function start() {
-    "use strict";
     var i;
     if (check === false) {
         for (i = 0; i < cards.length; i += 1) {
@@ -26,7 +26,6 @@ function start() {
  *Shows the solution for the memory game.
  */
 function solution() {
-    "use strict";
     for (let i = 0; i < cardText.length; i++) {
         cardText[i].style.visibility = "visible";
         cards[i].style.backgroundColor = "blue";

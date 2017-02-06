@@ -1,0 +1,25 @@
+main {
+    margin: 2% 25% 10% 25%;
+}
+
+section {
+    font-size: 1.5rem;
+    padding: 4% 6% 0% 6%;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: lightskyblue;
+    font-size: 0.6em;
+    box-shadow: 2px 2px grey;
+    padding: 1.7%;
+    margin-right: 3%;
+    margin-top: 40px;
+}
+
+button:active {
+    box-shadow: none;
+}
