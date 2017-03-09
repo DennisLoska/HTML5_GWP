@@ -7,6 +7,28 @@ img {
     margin-bottom: 20%;
 }
 
+.gamelink {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.gamelink a {
+    color: black;
+    background-color: skyblue;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 5% 0 5% 0;
+    width: 50%;
+    display: block;
+}
+
+.gamelink a:hover {
+    background-color: seashell;
+}
+
 form {
     background-color: white;
     padding: 5%;
